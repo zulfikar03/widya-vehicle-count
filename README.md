@@ -27,6 +27,7 @@ This project is to detect cars, buses, and trucks that are traveling through the
 2. **Creating a Virtual Environment**
 ```sh
     conda create -p venv python==3.10
+    conda activate venv
 ```
 3. **Clone a Github Repository**
  ```sh
