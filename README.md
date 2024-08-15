@@ -18,4 +18,26 @@ Projek ini adalah untuk mendeteksi objek kendaraan mobil, bus, dan truk yang sed
 - `yolov5s.pt`: Model YOLOv5 yang telah dilatih.
 - `yolov8n.pt`: Model YOLOv8 yang telah dilatih.
 
+## INSTALASI
+1. **Persyaratan**
+ ```sh
+   python 3.10
+   ```
+2 **Buat Virtual Environment**
+```sh
+    conda create -p venv python==3.10
+```
+3. **Clone Github Repository**
+ ```sh
+   git clone https://github.com/zulfikar03/widya-vehicle-count.git
+   cd widya-vehicle-count
+   ```
+4. **Install Dependensi yang Digunakan
+```sh
+    pip install -r requirements.txt
+```
+5. Jalankan Skrip Utama
+```sh
+    python main.py
+```
 
