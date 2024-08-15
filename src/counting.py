@@ -1,7 +1,7 @@
 import cv2
 # Fungsi untuk melacak dan menghitung kendaraan berdasarkan jenisnya
 def track_and_count_vehicles(frame, detections, tracker, totalCount, class_name, gates, limits):
-    # Gunakan DeepSORT untuk melacak objek berdasarkan deteksi YOLOv8
+    # Gunakan DeepSORT untuk melacak objek berdasarkan deteksi YOLOv5
     tracks = tracker.update_tracks(detections, frame=frame)
     
     # List untuk menyimpan bounding box
@@ -13,7 +13,7 @@ def track_and_count_vehicles(frame, detections, tracker, totalCount, class_name,
             continue
 
         track_id = track.track_id
-        ltrb = track.to_ltrb()  # bounding box format (left, top, right, bottom)
+        ltrb = track.to_ltrb()  
         x1, y1, x2, y2 = map(int, ltrb)
         w, h = x2 - x1, y2 - y1
         cx, cy = x1 + w // 2, y1 + h // 2

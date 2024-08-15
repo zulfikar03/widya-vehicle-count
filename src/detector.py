@@ -4,7 +4,7 @@ import torch
 class YoloDetector():
 
     def __init__(self):
-        #Using yolov5s for our purposes of object detection, you may use a larger model
+        #menggunakan torch.hub untuk meload yolov5
         self.model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained = True)
         self.classes = self.model.names
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
