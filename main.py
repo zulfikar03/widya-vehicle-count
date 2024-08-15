@@ -15,7 +15,7 @@ width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 
 # Definisikan VideoWriter untuk menyimpan video dalam format .avi
 fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-out = cv2.VideoWriter('../output_video/result_video.avi', fourcc, 30, (width, height))
+out = cv2.VideoWriter('output_video\\result_video.avi', fourcc, 30, (width, height))
 
 # menginisiasi YOLOv5 detector
 detector = YoloDetector()
