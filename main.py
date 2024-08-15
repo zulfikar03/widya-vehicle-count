@@ -86,7 +86,7 @@ def track_and_count_vehicles(frame, detections, tracker, totalCount, class_name,
     return bboxes, totalCount
 
 # Open the video file
-video_path = "toll_gate (2).mp4"  # Change this to your video path
+video_path = "https://github.com/zulfikar03/widya-vehicle-count/raw/main/assets/toll_gate.mp4"  # Change this to your video path
 cap = cv2.VideoCapture(video_path)
 
 # Dapatkan dimensi video
@@ -95,7 +95,7 @@ width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 
 # Definisikan VideoWriter untuk menyimpan video dalam format .avi
 fourcc = cv2.VideoWriter_fourcc(*'MJPG')
-out = cv2.VideoWriter('result_video.avi', fourcc, 30, (width, height))
+out = cv2.VideoWriter('../assets/result_video.avi', fourcc, 30, (width, height))
 
 #Initializing the detection class
 detector = YoloDetector()
