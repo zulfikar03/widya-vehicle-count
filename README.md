@@ -32,12 +32,14 @@ Projek ini adalah untuk mendeteksi objek kendaraan mobil, bus, dan truk yang sed
    git clone https://github.com/zulfikar03/widya-vehicle-count.git
    cd widya-vehicle-count
    ```
-4. **Install Dependensi yang Digunakan
+4. **Install Dependensi yang Digunakan**
 ```sh
     pip install -r requirements.txt
 ```
-5. Jalankan Skrip Utama
+5. **Jalankan Skrip Utama**
 ```sh
     python main.py
 ```
+
+
 
