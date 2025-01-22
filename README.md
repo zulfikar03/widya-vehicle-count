@@ -2,7 +2,12 @@
 
 ## PROJECT OVERVIEW
 
-This project is to detect cars, buses, and trucks that are traveling through the toll gate. When passing through the toll gate, the system will count the number of cars, buses, and trucks so that the total number of vehicles is calculated. By using the YOLOv5 algorithm to detect vehicles and Deep SORT (Simple Online and Realtime Tracking with a Deep Association Metric) for tracking. There are 8 gates that are drawn straight lines so that when a vehicle passes through it will be seen so that it is counted.
+This project aims to detect and count vehicles such as cars, buses, and trucks traveling through This project aims to detect and count vehicles such as cars, buses, and trucks traveling through toll gates. The system records the number of vehicles by type as they pass through the gates. The technologies used in this project include:
+
+- **YOLOv5**: An object detection algorithm to identify vehicles.
+- **Deep SORT (Simple Online and Realtime Tracking)**: Used for accurate vehicle tracking to ensure each vehicle is counted only once.
+
+The project incorporates 8 virtual toll gates represented by straight lines. When a vehicle crosses one of these lines, the system detects and counts it based on its category (car, bus, truck), producing a total count for each type.
 
 ## PROJECT STRUCTURE
 - `.idea/`: Configuration directory for the IDE.
@@ -21,9 +26,9 @@ This project is to detect cars, buses, and trucks that are traveling through the
 
 ## INSTALLATION
 1. **Requirements**
- ``sh
+```sh
    python 3.10
-   ```
+```
 2. **Creating a Virtual Environment**
 ```sh
     conda create -p venv python==3.10
