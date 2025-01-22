@@ -9,6 +9,9 @@ This project aims to detect and count vehicles such as cars, buses, and trucks t
 
 The project incorporates 8 virtual toll gates represented by straight lines. When a vehicle crosses one of these lines, the system detects and counts it based on its category (car, bus, truck), producing a total count for each type.
 
+## Flowchart
+![Vehicle Tracking Flowchart](https://github.com/zulfikar03/widya-vehicle-count/blob/main/images/Flowchart.png)
+
 ## PROJECT STRUCTURE
 - `.idea/`: Configuration directory for the IDE.
 - `assets/`: Folder for storing assets needed in the project.
