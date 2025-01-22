@@ -12,6 +12,10 @@ The project incorporates 8 virtual toll gates represented by straight lines. Whe
 ## Flowchart
 ![Vehicle Tracking Flowchart](https://github.com/zulfikar03/widya-vehicle-count/blob/main/images/Flowchart.png)
 
+## Example Result
+This is from screenshot the result from video output
+![Vehicle Tracking Result](https://github.com/zulfikar03/widya-vehicle-count/blob/main/images/result_video.png)
+
 ## PROJECT STRUCTURE
 - `.idea/`: Configuration directory for the IDE.
 - `assets/`: Folder for storing assets needed in the project.
